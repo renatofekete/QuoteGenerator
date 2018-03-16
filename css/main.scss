@@ -1,17 +1,50 @@
+$main-color :#00FF7F;
+$font-color: black;
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
+
 html,
 body,
 .container {
   width: 100%;
   height: 100%;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background: $main-color;
+  color: lighten($font-color, 15%);
+  p {
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
+    a {
+      color: $font-color;
+    }
+  }
+  #quote {
+    border-left: 3px solid darken($main-color, 20%);
+    padding: 20px;
+    background: darken($main-color, 10%);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    border: none;
+    background: darken($main-color, 20%);
+    cursor: pointer;
+    outline: none;
+    padding: 15px 20px;
+    color: lighten($font-color, 10%);
+  }
 }

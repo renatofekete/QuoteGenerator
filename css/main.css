@@ -13,6 +13,31 @@ body,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  background: #00FF7F;
+  color: #262626; }
+  .container p {
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center; }
+    .container p a {
+      color: black; }
+  .container #quote {
+    border-left: 3px solid #00994c;
+    padding: 20px;
+    background: #00cc66;
+    font-size: 20px;
+    font-weight: bold; }
+  .container button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    border: none;
+    background: #00994c;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 20px;
+    color: #1a1a1a; }
 
 /*# sourceMappingURL=main.css.map */
