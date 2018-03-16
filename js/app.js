@@ -8,7 +8,7 @@ btn.addEventListener("click", function () {
     if (quoteRequest.readyState == 4 && quoteRequest.status == 200) {
       var quoteInfo = JSON.parse(quoteRequest.response);
       quote.innerHTML = quoteInfo.quote;
-      author.innerHTML = `Author: ${quoteInfo.author}`;
+      author.innerHTML = `Author: <a title ="Wikipedia: ${quoteInfo.author}" target= "_blank" href="https://en.wikipedia.org/wiki/${quoteInfo.author}" >${quoteInfo.author}</a>`;
       
     }
   };
