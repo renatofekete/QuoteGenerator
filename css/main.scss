@@ -48,3 +48,16 @@ body,
     color: lighten($font-color, 10%);
   }
 }
+@media screen and(max-width: 768px) {
+  .container {
+    p {
+      width: 100%;
+    }
+    #quote {
+      font-size: 16px;
+    }
+    button {
+      margin-bottom: 5px;
+    }
+  }
+}
