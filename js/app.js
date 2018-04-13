@@ -7,7 +7,8 @@ btn.addEventListener("click", function () {
   quoteRequest.onreadystatechange = function() {
     if (quoteRequest.readyState == 4 && quoteRequest.status == 200) {
       var quoteInfo = JSON.parse(quoteRequest.response);
-      quote.innerHTML = quoteInfo.quote;
+      var tweet = `${quoteInfo.quote} -- ${quoteInfo.author}`
+      quote.innerHTML = `${quoteInfo.quote} <a href="https://twitter.com/intent/tweet/?text= ${tweet}" data-show-count="false">Tweet</a>`;
       author.innerHTML = `Author: <a title ="Wikipedia: ${quoteInfo.author}" target= "_blank" href="https://en.wikipedia.org/wiki/${quoteInfo.author}" >${quoteInfo.author}</a>`;
       
     }
